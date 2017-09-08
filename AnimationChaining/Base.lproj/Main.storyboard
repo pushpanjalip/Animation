@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationChaining" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="y92-xS-wuJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TASTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDR-Ae-kP5">
+                                <rect key="frame" x="113" y="160" width="150" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="97E-0s-UtO"/>
+                                    <constraint firstAttribute="height" constant="55" id="kcf-OR-e4S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="45"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Food    Your Ratings" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0W-CA-kZV">
+                                <rect key="frame" x="84" y="291" width="208" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="IlB-AK-MmT"/>
+                                    <constraint firstAttribute="width" constant="208" id="YKH-vs-7Rj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMf-tu-SxM" customClass="RoundButton" customModule="AnimationChaining" customModuleProvider="target">
+                                <rect key="frame" x="162.5" y="491" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="VVT-Rh-BXI"/>
+                                    <constraint firstAttribute="width" constant="70" id="ggg-3r-jWg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="GoButton"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="SQt-KE-tdd" kind="show" id="uEw-km-VJb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g0W-CA-kZV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Gq-81-os3"/>
+                            <constraint firstAttribute="trailing" secondItem="y92-xS-wuJ" secondAttribute="trailing" id="5vH-Ah-yhn"/>
+                            <constraint firstItem="hDR-Ae-kP5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="7lU-eZ-qNZ"/>
+                            <constraint firstItem="qMf-tu-SxM" firstAttribute="top" secondItem="g0W-CA-kZV" secondAttribute="bottom" constant="115" id="BGp-su-CH2"/>
+                            <constraint firstItem="g0W-CA-kZV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GJ2-Qd-ITp"/>
+                            <constraint firstItem="hDR-Ae-kP5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kec-7K-N2T"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y92-xS-wuJ" secondAttribute="bottom" id="Vbn-0P-Pfg"/>
+                            <constraint firstItem="qMf-tu-SxM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10" id="h1T-0C-BUM"/>
+                            <constraint firstItem="y92-xS-wuJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nlQ-N2-rIi"/>
+                            <constraint firstItem="y92-xS-wuJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wjm-iZ-BIw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DescLabel" destination="g0W-CA-kZV" id="5kA-V4-LPd"/>
+                        <outlet property="GoButton" destination="qMf-tu-SxM" id="iS8-gU-2QQ"/>
+                        <outlet property="TitleLabel" destination="hDR-Ae-kP5" id="Yor-v4-tbB"/>
+                        <outlet property="backImage" destination="y92-xS-wuJ" id="q2g-EK-gGY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466" y="39"/>
+        </scene>
+        <!--Swiping Card-->
+        <scene sceneID="B4e-mq-GBd">
+            <objects>
+                <viewController id="x2o-Ur-Zf8" customClass="SwipingCard" customModule="AnimationChaining" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AZT-GK-gRn"/>
+                        <viewControllerLayoutGuide type="bottom" id="C55-6c-GuQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rdh-Wh-nm1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2fw-41-Lqv">
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="KXp-33-HlN"/>
+                                    <constraint firstAttribute="width" constant="300" id="cis-FP-laX"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JwK-8V-XjQ" appends="YES" id="DkG-4T-qtO"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" image="dislike" translatesAutoresizingMaskIntoConstraints="NO" id="svD-na-7xo">
+                                <rect key="frame" x="138" y="284" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1bo-aZ-s8w"/>
+                                    <constraint firstAttribute="height" constant="100" id="Rjw-xO-cFR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ps-lG-UpO">
+                                <rect key="frame" x="150" y="43" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="x2o-Ur-Zf8" eventType="touchUpInside" id="Ycn-ra-5Jw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="svD-na-7xo" firstAttribute="centerY" secondItem="rdh-Wh-nm1" secondAttribute="centerY" id="05n-sy-Ara"/>
+                            <constraint firstItem="2fw-41-Lqv" firstAttribute="centerY" secondItem="rdh-Wh-nm1" secondAttribute="centerY" id="GgQ-so-lDz"/>
+                            <constraint firstItem="2fw-41-Lqv" firstAttribute="centerX" secondItem="rdh-Wh-nm1" secondAttribute="centerX" id="LOP-Vx-Heh"/>
+                            <constraint firstItem="svD-na-7xo" firstAttribute="centerX" secondItem="rdh-Wh-nm1" secondAttribute="centerX" id="jSC-AJ-S5U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardImage" destination="2fw-41-Lqv" id="kBc-7Y-2fu"/>
+                        <outlet property="thumImageView" destination="svD-na-7xo" id="9CB-Hx-m9F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vUc-kI-fld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="JwK-8V-XjQ">
+                    <connections>
+                        <action selector="handleSwipe:" destination="x2o-Ur-Zf8" id="jdP-Gr-O5N"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-466.39999999999998" y="707.49625187406298"/>
+        </scene>
+        <!--Toggle Menu Controller-->
+        <scene sceneID="e8g-fK-eFQ">
+            <objects>
+                <viewController id="SQt-KE-tdd" customClass="ToggleMenuController" customModule="AnimationChaining" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gE5-yK-fce"/>
+                        <viewControllerLayoutGuide type="bottom" id="DBZ-qa-U7f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G4U-im-XOW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRh-TD-x93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368.80000000000001" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GoButton" width="40" height="40"/>
+        <image name="background" width="16" height="16"/>
+        <image name="dislike" width="50" height="50"/>
+    </resources>
+</document>
